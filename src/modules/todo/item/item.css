@@ -1,0 +1,24 @@
+.todo-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeeff;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.todo-body input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+.todo-body button {
+    height: 55px;
+    width: 75px;
+    border-radius: 40px;
+}

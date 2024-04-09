@@ -1,0 +1,9 @@
+node_modules
+.history
+
+# lwc
+__lwr_cache__
+
+# yarn
+.yarn/*
+!.yarn/releases

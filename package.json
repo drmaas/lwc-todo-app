@@ -1,0 +1,27 @@
+{
+  "name": "lwc-todo-app",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf node_modules __lwr_cache__ site",
+    "dev": "lwr dev",
+    "dev:compat": "lwr dev --mode compat",
+    "build": "lwr build --clean",
+    "build:prod-compat": "lwr build --clean --mode prod-compat",
+    "start": "lwr start",
+    "stage": "yarn build && yarn start",
+    "stage:prod-compat": "yarn build:prod-compat && yarn start"
+  },
+  "dependencies": {
+    "@lwc/compiler": "^6.5.0",
+    "@lwc/module-resolver": "^6.5.0",
+    "@lwc/synthetic-shadow": "^6.5.0",
+    "lwc": "6.5.0",
+    "lwc-recipes-oss-ui-components": "^0.3.2",
+    "lwr": "0.12.2",
+    "pwa-kit-runtime": "^2.8.2"
+  },
+  "packageManager": "yarn@4.1.1"
+}

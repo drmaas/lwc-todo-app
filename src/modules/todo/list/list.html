@@ -1,0 +1,15 @@
+<template>
+    <div class="container">
+        <ul>
+            <template for:each={todos} for:item="todo">
+                <todo-item
+                    key={todo.id}
+                    item={todo}
+                    onsavetodo={handleSaveTodo}
+                    ondeletetodo={handleDeleteTodo}
+                ></todo-item>
+            </template>
+        </ul>
+        <button onclick={addTodo}>New</button>
+    </div>
+</template>
